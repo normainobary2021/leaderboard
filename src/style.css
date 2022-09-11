@@ -46,6 +46,16 @@ section {
   background: transparent;
 }
 
+.main-container {
+  border: 1px solid #000;
+  padding: 15px;
+}
+
+.scores-list table {
+  width: 100%;
+  text-align: left;
+}
+
 .add-score form {
   display: flex;
   flex-direction: column;
