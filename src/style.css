@@ -1,15 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-h1 {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #faf5f5;
+  margin: 2em;
+}
+
+h1 {
   font-weight: 600;
   font-size: 40px;
-  text-align: center;
+  padding: 0.5em 0;
 }
 
 h2,
 h3 {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 32px;
+  margin: 1em 0;
+}
+
+input[type="button"] {
+  box-shadow: 3px 3px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-class {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.header-class > input[type="button"] {
+  padding: 0.5em;
+  background: transparent;
+}
+
+.add-score form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: flex-end;
+}
+
+.add-score form input {
+  padding: 0.5em;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid #000;
+}
+
+.add-score form input[type="button"] {
+  width: 50%;
 }
