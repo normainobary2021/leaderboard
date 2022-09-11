@@ -13,18 +13,30 @@
       <div class="main-scores">
         <div class="header-class">
           <h2 class="score-heading">Recent Scores</h2>
-          <input type="button" class="refresh-btn" value="Refresh" />
+          <input type="button" id="refresh" class="refresh-btn" value="Refresh" />
         </div>
         <div class="main-container hidden">
-          <div class="scores-list" id="scores-list"></div>
+          <div class="scores-list" id="scores-list">
+            <table class="">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div class="add-score">
-        <h3 class="title">Add your scores</h3>
-        <form class="form" action="null" method="post">
-          <input class="title input" type="text" placeholder="Name: " />
-          <input class="author input" type="text" placeholder="Score: " />
-          <input type="button" class="add-btn" value="Add" />
+        <h3 class="title">Add your score</h3>
+        <form class="form" action="">
+          <input id="name" class="input" type="text" placeholder="Name: " />
+          <input id="score" class="input" type="text" placeholder="Score: " />
+          <input type="button" id="submit" class="add-btn" value="Add" />
         </form>
       </div>
     </section>
